@@ -1,12 +1,14 @@
 import React from 'react';
 import heroImg from "./../../images/heroImg.png"
+import circle from "./../../images/circle.svg"
+import "./hero.scss";
 const Hero = () => {
     return (
         <section id="hero" style={{
             background: "rgba(1,1,21,0.91)"
         }} className="">
             <div className="cotainer">
-                <div className="hero py-10 flex items-center justify-around">
+                <div className="hero py-4 flex items-center justify-around">
                     <div className="hero--text">
                         <h4 className="text-amber-50 uppercase text-2xl">Hello</h4>
                         <h1 className="text-amber-50 uppercase text-3xl py-2">I'm Jumashev <br/> Eldorado</h1>
@@ -18,6 +20,15 @@ const Hero = () => {
                     </div>
                     <div className="hero--images">
                         <img src={heroImg} alt="img"/>
+                        <div className="hero--images__circle">
+                          <div className="hero--images__circle--icons">
+                              <div className="hero--images__circle--icons__ts">TS</div>
+                              <div className="hero--images__circle--icons__ui">UI</div>
+                              <div className="hero--images__circle--icons__vue">V</div>
+                              <div className="hero--images__circle--icons__js">JS</div>
+                          </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

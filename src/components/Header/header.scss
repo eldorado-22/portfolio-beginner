@@ -1,0 +1,12 @@
+#header{
+  .header{
+    &--navbar{
+      a{
+        padding: 0 40px;
+        &:focus{
+          color: aqua;
+        }
+      }
+    }
+  }
+}

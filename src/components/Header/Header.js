@@ -1,4 +1,5 @@
 import React from 'react';
+import "./header.scss";
 import logo from "./../../images/logo.svg"
 
 const Header = () => {
@@ -11,9 +12,10 @@ const Header = () => {
                         <h5 className="text text-2xl px-2 text-amber-50">Jumashev</h5>
                     </div>
 
-                    <nav className="py-4 text-amber-50 ">
+                    <nav className="header--navbar py-4 text-amber-50 ">
                         <a href="#" className="">Home</a>
                         <a href="#" className="px-5">About Me</a>
+                        <a href="#">Services</a>
                         <a href="#">Contact</a>
                     </nav>
                     <div className="">

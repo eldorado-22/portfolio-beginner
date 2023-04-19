@@ -1,0 +1,127 @@
+#hero {
+  .hero {
+    &--text {
+      button {
+        outline: none;
+
+        &:focus {
+          background: #052b57;
+          color: #fff;
+        }
+      }
+
+      p {
+        padding: 20px 0;
+      }
+    }
+
+    &--images {
+      position: relative;
+
+      img {
+        z-index: 999;
+        position: inherit;
+      }
+
+      &__circle {
+        position: absolute;
+        width: 120%;
+        height: 575px;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        margin: 20px 0 0 -40px;
+        border-radius: 50%;
+
+        border: 67px solid #00C4F0;
+        filter: drop-shadow(0px 0px 152px rgba(12, 168, 203, 0.42));
+        animation: circle infinite linear 10s;
+        @keyframes circle {
+          0% {
+            transform: rotate(0);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        &--icons {
+          display: flex;
+
+
+          &__js {
+            position: relative;
+            left: 18%;
+            top: 0;
+            margin-bottom: 20px;
+            width: 21%;
+            height: 90px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            color: #00C4F0;
+            padding-left: 25px;
+            background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+
+          }
+
+          &__ts {
+            position: relative;
+            top: -10px;
+            right: 5%;
+            width: 21%;
+            height: 90px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            color: #00C4F0;
+            padding-left: 25px;
+            background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+
+          }
+
+          &__ui {
+            position: relative;
+            top: 140px;
+            right: 45%;
+            width: 21%;
+            height: 90px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            color: #00C4F0;
+            padding-left: 25px;
+            background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+
+          }
+
+          &__vue {
+            position: relative;
+            top: 290px;
+            right: 60%;
+            width: 21%;
+            height: 90px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            color: #00C4F0;
+            padding-left: 30px;
+            background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+
+          }
+        }
+      }
+    }
+  }
+}
