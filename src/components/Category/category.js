@@ -14,23 +14,23 @@ const Category = () => {
                     <div className="group">
                         <div className="category--front">
                             <img src={laptop} alt="img"/>
-                            <h2 className="text-white ">Front-End <br/> Developer</h2>
+                            <h3 className="text-white ">Front-End <br/> Developer</h3>
                         </div>
-                        <div className="category--photo">
+                        <div className="category--photo category--front">
                             <img src={back} alt="img" width={90}/>
                             <h2 className="text-white ">Logo</h2>
                         </div>
-                        <div className="category--photo">
+                        <div className="category--photo category--front">
                             <img src={motion} alt="img"/>
                             <h2 className="text-white ">Motion</h2>
                         </div>
                     </div>
                     <div className="category--block">
-                        <div className="category--block__photo">
+                        <div className="category--block__photo category--front">
                             <img src={bag} alt="img" width={70}/>
                             <h2 className="text-white ">Design</h2>
                         </div>
-                        <div className="category--block__photo">
+                        <div className="category--block__photo category--front">
                             <img src={menu} alt="img" width={60}/>
                             <h2 className="text-white ">Bloger</h2>
                         </div>

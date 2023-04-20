@@ -2,7 +2,7 @@ import React from 'react';
 import "./header.scss";
 import logo from "./../../images/logo.svg"
 
-const Header = () => {
+const Header = ({setDark, dark}) => {
     return (
         <header id="header" className="bg-gray-900">
             <div className="container">
@@ -18,7 +18,7 @@ const Header = () => {
                         <a href="#">Contact</a>
                     </nav>
                     <div className="">
-                        <button className="dark px-3 py-5 bg-transparent border-amber-500 text-amber-50">Dark</button>
+                        <button onClick={() => setDark(!dark)} className="dark px-3 py-5 bg-transparent border-amber-500 text-amber-50">Dark</button>
                         <button className="github px-3 py-5 bg-transparent border-amber-500 text-amber-50">GitHub</button>
                     </div>
                 </div>

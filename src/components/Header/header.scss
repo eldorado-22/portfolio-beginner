@@ -2,7 +2,7 @@
   .header {
     position: sticky;
     top: 0;
-    z-index: -19;
+    z-index: 999;
     padding: 15px 0;
     &--navbar {
       a {

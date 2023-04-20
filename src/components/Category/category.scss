@@ -1,5 +1,5 @@
 #category {
-  background: rgba(4, 17, 108, 0.86);
+  background: rgba(1, 7, 40, 0.86);
   min-height: 80vh;
 
   .category {
@@ -8,6 +8,8 @@
 
     img {
       padding: 10px 0;
+      transition: 1.10s;
+
     }
 
     .group {
@@ -26,8 +28,40 @@
       background: #2A2A2A;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.47);
       border-radius: 29px;
+      position: relative;
+      transition:  .10s;
+
+      &:hover {
+        img {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+
+        h2 {
+          font-size: 40px;
+          position: inherit;
+          transform: scale(1.1);
+          transition: 1.10s;
+        }
+
+        h3 {
+          font-size: 26px;
+          transform: scale(1.1);
+          position: inherit;
+          transition: 1.10s;
+        }
+      }
 
       h2 {
+        font-weight: 300;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        color: #E4E4E4;
+      }
+
+      h3 {
         font-weight: 300;
         font-size: 24px;
         display: flex;
