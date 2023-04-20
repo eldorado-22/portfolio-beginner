@@ -1,8 +1,33 @@
 #hero {
   .hero {
     &--text {
+      h4{
+        font-weight: 550;
+        font-size: 60px;
+      }
+      h1{
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 1.2em;
+      }
       button {
         outline: none;
+        display: flex;
+        align-items: center;
+        filter: drop-shadow(40px 10px 400px rgba(0, 196, 240, 0.98));
+        .icons{
+          margin: 0 10px;
+          animation: 1.5s call infinite linear;
+        }
+        @keyframes call {
+          0%{
+            transform: translateY(0px);
+          }
+          100%{
+            transition: .5s;
+            transform: translateY(-12px);
+          }
+        }
 
         &:focus {
           background: #052b57;
@@ -64,7 +89,7 @@
             color: #00C4F0;
             padding-left: 25px;
             background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-
+            cursor: pointer;
           }
 
           &__ts {
